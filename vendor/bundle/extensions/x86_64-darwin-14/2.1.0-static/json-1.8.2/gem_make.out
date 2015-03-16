@@ -1,0 +1,10 @@
+/Users/shinpei/.rbenv/versions/2.1.1/bin/ruby -r ./siteconf20150316-95346-1qfp2ct.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
+installing default libraries
