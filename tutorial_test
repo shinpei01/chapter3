@@ -1,0 +1,30 @@
+問１
+1)フレームワーク
+2)Action View
+3)REST
+
+1)(f) rake db:migrate:reset
+2)(a) Top コントローラの index アクションが実行される
+3)(e) ShoppingCart
+4)(a) コントローラクラスの public なインスタンスメソッドである。
+5)(c) Player クラスの定義で belongs_to :team と書く。
+
+問３
+1)#{@name}
+2)<%= yield %>
+3)
+
+問４
+1) Member.find(2)
+2) Member.all(:condition => 'age <20’)
+3)
+
+問５
+1)コントローラー名/アクション名
+a) welcome/index
+b) movies/show
+c) comments/edit
+c) documents/show
+
+2)
+3)
