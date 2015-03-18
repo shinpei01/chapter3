@@ -32,3 +32,9 @@ module TestApp
     config.active_record.raise_in_transactional_callbacks = true
   end
 end
+
+module SampleApp
+  class Application < Rails::Application
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+  end
+end
