@@ -14,6 +14,7 @@ end
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
+  gem 'factory_girl_rails', '4.2.1'
 end
 
 # Use SCSS for stylesheets
@@ -28,12 +29,19 @@ gem 'coffee-rails', '4.0.1'
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '3.0.4'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks', '1.1.1'
+gem 'turbolinks', '2.5.3'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '1.0.2'
 # bundle exec rake doc:rails generates the API under doc/api.
 group :doc do
   gem 'sdoc', '0.3.20', require: false
+end
+
+group :development, :test do
+  gem 'pry-rails'  # rails console(もしくは、rails c)でirbの代わりにpryを使われる
+  gem 'pry-doc'    # methodを表示
+  gem 'pry-byebug' # デバッグを実施(Ruby 2.0以降で動作する)
+  gem 'pry-stack_explorer' # スタックをたどれる
 end
 
 group :production do
